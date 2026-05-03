@@ -45,7 +45,7 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - uses: eideticresearch/agent-seatbelt@v1
+      - uses: Eidetic-Research/agent-seatbelt@v1
         with:
           mode: warn
           comment: true
