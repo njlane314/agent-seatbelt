@@ -1,6 +1,6 @@
-name: PatchProof Agent Seatbelt
+name: Eidetic Research Agent Seatbelt
 description: "Apply stricter PR guardrails to agent-authored changes."
-author: njlane314
+author: Eidetic Research
 branding:
   icon: shield
   color: blue

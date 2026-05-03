@@ -4,7 +4,7 @@ import { parse } from 'yaml';
 import { z } from 'zod';
 
 export const TOOL_NAME = 'agent-seatbelt';
-export const VERSION = '0.1.2';
+export const VERSION = '0.1.3';
 export const DEFAULT_CONFIG_PATH = '.github/agent-seatbelt.yml';
 
 const ProtectedPathSchema = z.object({

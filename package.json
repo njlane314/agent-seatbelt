@@ -1,6 +1,6 @@
 {
   "name": "agent-seatbelt",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A PR guardrail for AI-agent-authored or bot-authored changes.",
   "type": "module",
   "license": "BUSL-1.1",
@@ -43,5 +43,6 @@
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "author": "Eidetic Research"
 }
