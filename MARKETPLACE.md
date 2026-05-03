@@ -1,6 +1,6 @@
 # GitHub Marketplace Publishing Notes
 
-Release title: Eidetic Research Agent Seatbelt v0.1.3
+Release title: Eidetic Research Vigil v0.1.3
 
 Primary category: Security
 Secondary category: Code quality
@@ -10,7 +10,7 @@ Apply stricter PR guardrails to agent-authored changes.
 
 Release notes:
 
-Eidetic Research Agent Seatbelt is a local-first GitHub Action and CLI from Eidetic Research. It produces JSON, Markdown, GitHub Step Summary output, and optional stable PR comments. It supports warn/fail modes, explicit base/head refs, and repository-local configuration.
+Eidetic Research Vigil is a local-first GitHub Action and CLI from Eidetic Research. It produces JSON, Markdown, GitHub Step Summary output, and optional stable PR comments. It supports warn/fail modes, explicit base/head refs, and repository-local configuration.
 
 This release prepares the action for GitHub Marketplace publication under the Eidetic Research brand:
 
@@ -25,4 +25,4 @@ Suggested listing summary:
 Apply stricter PR guardrails to agent-authored changes.
 
 Suggested listing body:
-Use Agent Seatbelt when pull requests need evidence before merge. The action runs locally on the checked-out repository, avoids telemetry and LLM calls, and only uses the GitHub API for optional PR comments. Configure it under .github/agent-seatbelt.yml and choose warn mode for advisory checks or fail mode for blocking checks.
+Use Vigil when pull requests need evidence before merge. The action runs locally on the checked-out repository, avoids telemetry and LLM calls, and only uses the GitHub API for optional PR comments. Configure it under .github/agent-seatbelt.yml and choose warn mode for advisory checks or fail mode for blocking checks.

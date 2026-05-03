@@ -1,4 +1,4 @@
-# Agent Seatbelt
+# Vigil
 
 Treat coding agents like junior contractors with GitHub-native safety rules.
 
@@ -22,7 +22,7 @@ pnpm agent-seatbelt scan --base origin/main --head HEAD --format json
 Use `actions/checkout` with full history so git comparisons are available.
 
 ```yaml
-name: Agent Seatbelt
+name: Vigil
 
 on:
   pull_request:
@@ -45,7 +45,7 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - uses: Eidetic-Research/agent-seatbelt@v1
+      - uses: Eidetic-Research/vigil@v1
         with:
           mode: warn
           comment: true
