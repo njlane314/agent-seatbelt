@@ -1,6 +1,6 @@
 import { z } from 'zod';
 export declare const TOOL_NAME = "agent-seatbelt";
-export declare const VERSION = "0.1.0";
+export declare const VERSION = "0.1.1";
 export declare const DEFAULT_CONFIG_PATH = ".github/agent-seatbelt.yml";
 declare const ProtectedPathSchema: z.ZodObject<{
     path: z.ZodString;

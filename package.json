@@ -1,9 +1,9 @@
 {
   "name": "agent-seatbelt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A PR guardrail for AI-agent-authored or bot-authored changes.",
   "type": "module",
-  "license": "MIT",
+  "license": "BUSL-1.1",
   "private": false,
   "engines": {
     "node": ">=20"
