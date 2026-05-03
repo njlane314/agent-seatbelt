@@ -1,0 +1,42 @@
+name: Agent Seatbelt
+description: "A PR guardrail for AI-agent-authored or bot-authored changes."
+author: njlane314
+inputs:
+  base:
+    description: "Base git ref. Defaults to the pull request base SHA/ref."
+    required: false
+  head:
+    description: "Head git ref. Defaults to the pull request head SHA/ref."
+    required: false
+  config:
+    description: "Config file path. Defaults to .github/agent-seatbelt.yml."
+    required: false
+  mode:
+    description: "warn or fail. Defaults to warn."
+    required: false
+    default: warn
+  format:
+    description: "json or markdown. Defaults to markdown."
+    required: false
+    default: markdown
+  comment:
+    description: "When true, create or update one pull request comment. Defaults to false."
+    required: false
+    default: "false"
+  github-token:
+    description: "Token used only when comment is true. Defaults to github.token."
+    required: false
+    default: ${{ github.token }}
+  event:
+    description: "Path to a pull_request event JSON file. Defaults to GITHUB_EVENT_PATH."
+    required: false
+outputs:
+  json:
+    description: JSON scan result.
+  markdown:
+    description: Markdown scan report.
+  findings:
+    description: Number of findings.
+runs:
+  using: node20
+  main: dist/index.js

@@ -1,0 +1,47 @@
+{
+  "name": "agent-seatbelt",
+  "version": "0.1.0",
+  "description": "A PR guardrail for AI-agent-authored or bot-authored changes.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "agent-seatbelt": "./lib/cli.js"
+  },
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "build:action": "ncc build src/action.ts -o dist --target es2022 --source-map --license licenses.txt"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "commander": "^14.0.1",
+    "minimatch": "^10.0.3",
+    "picomatch": "^4.0.3",
+    "yaml": "^2.8.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "@types/picomatch": "^4.0.3",
+    "@vercel/ncc": "^0.38.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
