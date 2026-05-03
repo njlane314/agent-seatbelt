@@ -50500,7 +50500,7 @@ function preprocess(fn, schema) {
 
 
 const TOOL_NAME = 'agent-seatbelt';
-const VERSION = '0.1.1';
+const VERSION = '0.1.2';
 const DEFAULT_CONFIG_PATH = '.github/agent-seatbelt.yml';
 const ProtectedPathSchema = object({
     path: schemas_string(),

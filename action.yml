@@ -1,6 +1,9 @@
-name: Agent Seatbelt
-description: "A PR guardrail for AI-agent-authored or bot-authored changes."
+name: PatchProof Agent Seatbelt
+description: "Apply stricter PR guardrails to agent-authored changes."
 author: njlane314
+branding:
+  icon: shield
+  color: blue
 inputs:
   base:
     description: "Base git ref. Defaults to the pull request base SHA/ref."
